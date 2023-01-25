@@ -1,0 +1,100 @@
+{
+    "name": "react-graphql-challenge",
+    "version": "1.0.0",
+    "description": "AIBS App Team Coding Challenge",
+    "private": true,
+    "contributors": [
+        {
+            "name": "Lane Sawyer",
+            "email": "lane.sawyer@alleninstitute.org"
+        },
+        {
+            "name": "James Gerstenberger",
+            "email": "james.gerstenberger@alleninstitute.org"
+        }
+    ],
+    "browserslist": "> 0.2%",
+    "engines": {
+        "node": ">=16"
+    },
+    "scripts": {
+        "start": "parcel index.html --open --port 8080",
+        "build": "parcel build index.html --no-scope-hoist",
+        "lint": "eslint src --ext .ts,.tsx",
+        "test": "jest --config=jest.config.js --watch",
+        "format:write": "npx prettier --write .",
+        "format:check": "npx prettier --check .",
+        "graphql-codegen-types": "graphql-codegen --config codegen.yml"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AllenInstitute/react-graphql-challenge.git"
+    },
+    "homepage": "https://github.com/AllenInstitute/react-graphql-challenge#readme",
+    "devDependencies": {
+        "@graphql-codegen/cli": "2.5.0",
+        "@graphql-codegen/introspection": "2.2.1",
+        "@graphql-codegen/typescript": "2.7.3",
+        "@graphql-codegen/typescript-operations": "2.5.3",
+        "@graphql-codegen/typescript-react-apollo": "3.3.3",
+        "@swc/core": "1.2.197",
+        "@swc/jest": "0.2.21",
+        "@testing-library/jest-dom": "5.16.4",
+        "@testing-library/react": "12.1.5",
+        "@testing-library/react-hooks": "7.0.2",
+        "@types/autosuggest-highlight": "3.1.1",
+        "@types/d3-format": "2.0.2",
+        "@types/d3-hierarchy": "3.1.0",
+        "@types/jest": "28.1.1",
+        "@types/lodash": "4.14.182",
+        "@types/react": "17.0.38",
+        "@types/react-dom": "17.0.11",
+        "@typescript-eslint/eslint-plugin": "5.30.5",
+        "@typescript-eslint/parser": "5.18.0",
+        "dotenv": "16.0.1",
+        "eslint": "8.19.0",
+        "eslint-config-airbnb": "19.0.4",
+        "eslint-config-prettier": "8.5.0",
+        "eslint-plugin-import": "2.25.4",
+        "eslint-plugin-jest": "26.0.0",
+        "eslint-plugin-jsx-a11y": "6.5.1",
+        "eslint-plugin-react": "7.28.0",
+        "eslint-plugin-react-hooks": "4.3.0",
+        "jest": "28.1.1",
+        "jest-environment-jsdom": "28.1.1",
+        "jest-transform-stub": "2.0.0",
+        "lint-staged": "12.4.2",
+        "parcel": "2.7.0",
+        "prettier": "2.6.2",
+        "process": "0.11.10",
+        "sharp": "0.30.6",
+        "ts-node": "10.7.0",
+        "typescript": "4.6.2"
+    },
+    "dependencies": {
+        "@apollo/client": "3.5.10",
+        "@material-ui/core": "4.12.3",
+        "@material-ui/icons": "4.11.2",
+        "@material-ui/lab": "4.0.0-alpha.60",
+        "@reduxjs/toolkit": "1.5.1",
+        "autosuggest-highlight": "3.1.1",
+        "d3-format": "2.0.0",
+        "d3-hierarchy": "3.1.2",
+        "graphql": "15.5.2",
+        "graphql-tag": "2.12.6",
+        "lodash": "4.17.21",
+        "mdi-material-ui": "6.22.1",
+        "query-string": "7.1.1",
+        "react": "17.0.2",
+        "react-dom": "17.0.2",
+        "react-error-boundary": "3.1.3",
+        "react-redux": "8.0.1",
+        "react-router-dom": "6.3.0",
+        "reselect": "4.1.5"
+    },
+    "lint-staged": {
+        "*.{ts,tsx,js,css,md}": [
+            "prettier --write"
+        ]
+    }
+}

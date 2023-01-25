@@ -1,0 +1,12 @@
+overwrite: true
+schema: 'https://bkp-server-dev.aibs-bmp-dev.net/graphql'
+documents: ['src/services/**/*-query.ts', 'src/services/**/query.ts']
+generates:
+    src/types/generated-schema-types.ts:
+        plugins:
+            - 'typescript'
+            - 'typescript-operations'
+            - 'typescript-react-apollo'
+    ./graphql.schema.json:
+        plugins:
+            - 'introspection'

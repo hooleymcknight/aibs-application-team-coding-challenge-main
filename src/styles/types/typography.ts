@@ -1,0 +1,17 @@
+export type TypographyVariant =
+    | 'd1'
+    | 'd2'
+    | 'h1'
+    | 'h2'
+    | 'titleUppercase'
+    | 'title'
+    | 'emphasis'
+    | 'body'
+    | 'description'
+    | 'legal'
+    | 'button'
+    | 'titleUppercaseSmall'
+    | 'titleSmall'
+    | 'descriptionOnDarkBackground'
+    | 'emphasisOnDarkBackground'
+    | 'bodyOnDarkBackground';
